@@ -1,0 +1,216 @@
+.app {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-todo-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add-todo-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+.add-todo-form button {
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.todo-list {
+  background: #f9f9f9;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item span {
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-item span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-item button {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+}
+
+/* 連接測試樣式 */
+.connection-test {
+  background: #eee;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.connection-test h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.test-button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.test-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+.failed {
+  color: red;
+  font-weight: bold;
+}
+
+/* 加載狀態樣式 */
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* 錯誤訊息樣式 */
+.error-message {
+  background-color: #ffdddd;
+  color: #dd0000;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* 按鈕禁用狀態 */
+button:disabled {
+  background-color: #cccccc !important;
+  cursor: not-allowed;
+}
+
+/* 自定義樣式，配合 AdminLTE 和 Bootstrap */
+
+.todo-item {
+  transition: background-color 0.3s;
+}
+
+.todo-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* 編輯模式樣式 */
+.todo-item form {
+  display: flex;
+  width: 100%;
+}
+
+.todo-item form input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.todo-item .btn-info,
+.todo-item .btn-danger {
+  margin-right: 5px;
+}
+
+/* 改善工具按鈕的顯示 */
+.todo-item .tools {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.todo-item:hover .tools {
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .todo-item .tools {
+    opacity: 1; /* 在手機上總是顯示 */
+  }
+}
+
+/* 自定義待辦事項狀態樣式 */
+.todo-status {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-complete {
+  background-color: #28a745;
+}
+
+.status-pending {
+  background-color: #ffc107;
+}
+
+/* 可展開/收起的卡片消失時的過渡效果 */
+.card-collapse {
+  transition: all 0.3s ease;
+}
+
+/* 載入動畫樣式微調 */
+.spinner-border {
+  border-width: 0.2em;
+}
