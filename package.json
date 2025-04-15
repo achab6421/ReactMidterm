@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "cd build && npx gh-pages -d .",
     "setup": "npm config set registry https://registry.npmjs.org/ && npm config set timeout 60000 && npm install --no-fund --no-audit"
   },
   "eslintConfig": {
